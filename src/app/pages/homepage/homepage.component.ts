@@ -11,6 +11,6 @@ export class HomepageComponent {
   constructor() {}
 
   ngOnInit(): void {
-    console.log('HomepageComponent Init');
+    console.log('HomepageComponent ngOnInit');
   }
 }

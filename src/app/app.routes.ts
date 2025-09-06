@@ -1,7 +1,9 @@
 import { Routes } from '@angular/router';
+import { AuthComponent } from '@app/pages/auth/auth.component';
+import { LoginComponent } from '@app/pages/auth/login/login.component';
+import { SignupComponent } from '@app/pages/auth/signup/signup.component';
+import { HomepageComponent } from '@app/pages/homepage/homepage.component';
 import { PageNotFoundComponent } from '@app/pages/page-not-found/page-not-found.component';
-import { AuthComponent } from './pages/auth/auth.component';
-import { HomepageComponent } from './pages/homepage/homepage.component';
 
 const HomepageRoute = {
   path: '',
@@ -9,18 +11,23 @@ const HomepageRoute = {
   component: HomepageComponent,
 };
 
-const AuthRoute = {
+export const AuthRoute = {
   path: 'access',
   title: 'Access',
   component: AuthComponent,
 };
 
-const SignupRoute = {
+export const LoginRoute = {
+  path: 'login',
+  title: 'Log in',
+  component: LoginComponent,
+};
+
+export const SignupRoute = {
   path: 'sign-up',
   title: 'Sign up',
-  component: AuthComponent,
+  component: SignupComponent,
 };
-const DefaultRoute = { path: '', redirectTo: '/', pathMatch: 'full' };
 
 const PageNotFoundRoute = {
   path: '**',
@@ -28,11 +35,11 @@ const PageNotFoundRoute = {
   component: PageNotFoundComponent,
 };
 
-export const routes = [
+export const routes: Routes = [
   HomepageRoute,
   AuthRoute,
+  LoginRoute,
   SignupRoute,
-  DefaultRoute,
   PageNotFoundRoute,
 ];
-export const HeaderRoutes: Routes = [HomepageRoute, AuthRoute, SignupRoute];
+export const HeaderRoutes: Routes = [HomepageRoute, AuthRoute];
