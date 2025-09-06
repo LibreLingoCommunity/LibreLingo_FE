@@ -10,6 +10,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular-devkit/build-angular": "github:angular/angular-devkit-build-angular-builds",
     "@angular/common": "^20.2.3",
     "@angular/compiler": "^20.2.3",
     "@angular/core": "^20.2.3",

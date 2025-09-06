@@ -2,6 +2,7 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
+
   "projects": {
     "LibreLingoCommunity_FE": {
       "projectType": "application",
@@ -57,8 +58,12 @@
           "defaultConfiguration": "production"
         },
         "serve": {
+          "options": {},
           "builder": "@angular/build:dev-server",
           "configurations": {
+            "hmr": {
+              "hmr": true
+            },
             "production": {
               "buildTarget": "LibreLingoCommunity_FE:build:production"
             },

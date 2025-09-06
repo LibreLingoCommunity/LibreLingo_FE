@@ -1,0 +1,17 @@
+<header class="header my-4">
+  <nav class="nav flex flex-row">
+    <div class="logo">
+      <a routerLink="/">LibreLingo</a>
+    </div>
+    <div class="">
+            <ul class="flex flex-row">
+                @for (item of HeaderRoutes; track item.path) {
+                   <li>
+                        <a [routerLink]="item.path">{{ item.title }}</a>
+                   </li>
+                }
+            </ul>
+    </div>
+
+  </nav>
+</header>
