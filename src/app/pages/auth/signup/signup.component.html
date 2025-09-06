@@ -7,11 +7,12 @@
   </div>
 
   <button
+    (click)="onSubmit()"
     class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full shadow"
   >
-    Sign up
+    <a>Sign up</a>
   </button>
-  <div class="my-4">
+  <div class="my-12">
     <p>
       Already have an account?
       <a [routerLink]="'/' + loginPath.path">{{ loginPath.title }}</a>

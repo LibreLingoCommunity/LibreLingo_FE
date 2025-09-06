@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { AuthComponent } from '@app/pages/auth/auth.component';
+import { DashboardComponent } from '@app/pages/auth/dashboard/dashboard.component';
 import { LoginComponent } from '@app/pages/auth/login/login.component';
 import { SignupComponent } from '@app/pages/auth/signup/signup.component';
 import { HomepageComponent } from '@app/pages/homepage/homepage.component';
@@ -29,6 +30,12 @@ export const SignupRoute = {
   component: SignupComponent,
 };
 
+export const DashboardRoute = {
+  path: 'dashboard',
+  title: 'Dashboard',
+  component: DashboardComponent,
+};
+
 const PageNotFoundRoute = {
   path: '**',
   title: 'Page not found',
@@ -40,6 +47,7 @@ export const routes: Routes = [
   AuthRoute,
   LoginRoute,
   SignupRoute,
-  PageNotFoundRoute,
+  DashboardRoute,
+  PageNotFoundRoute, // Should always be the last!
 ];
 export const HeaderRoutes: Routes = [HomepageRoute, AuthRoute];
