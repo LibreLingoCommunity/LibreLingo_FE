@@ -18,9 +18,12 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "outputPath": "dist/libre-lingo-community-fe",
+            "statsJson": false,
+            "outputPath": {
+              "base": "dist",
+              "browser": ""
+            },
             "index": "src/index.html",
-            "browser": "src/main.ts",
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
@@ -58,7 +61,6 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-          "options": {},
           "builder": "@angular/build:dev-server",
           "configurations": {
             "hmr": {
