@@ -1,11 +1,7 @@
 <header class="header my-4">
   <nav class="nav flex flex-row mx-auto justify-between">
-    <div class="flex logo mx-2">
-      <a routerLink="/"
-        ><img src="/logo.png" alt="LibreLingo" class="w-auto"
-      /></a>
-    </div>
     <div class="flex flex-row space-x-6 items-center nav-links mx-2">
+      <app-logo />
       <ul class="flex flex-row">
         @for (item of HeaderRoutes; track item.path) {
         <li class="mx-2">

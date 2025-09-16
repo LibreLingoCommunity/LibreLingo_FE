@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { Course } from '@app/models/course';
+import { Course } from '@app/core/services/models/course';
 
 @Component({
   selector: 'app-course',
