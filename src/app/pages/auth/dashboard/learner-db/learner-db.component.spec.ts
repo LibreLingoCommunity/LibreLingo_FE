@@ -1,18 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LearnerDbComponent } from './learner-db.component';
+import { LearnerDashboardComponent } from './learner-db.component';
 
 describe('LearnerDbComponent', () => {
-  let component: LearnerDbComponent;
-  let fixture: ComponentFixture<LearnerDbComponent>;
+  let component: LearnerDashboardComponent;
+  let fixture: ComponentFixture<LearnerDashboardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LearnerDbComponent]
-    })
-    .compileComponents();
+      imports: [LearnerDashboardComponent],
+    }).compileComponents();
 
-    fixture = TestBed.createComponent(LearnerDbComponent);
+    fixture = TestBed.createComponent(LearnerDashboardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

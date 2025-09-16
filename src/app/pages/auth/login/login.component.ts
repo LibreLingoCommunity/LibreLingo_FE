@@ -14,7 +14,6 @@ export class LoginComponent {
   constructor(private router: Router) {}
 
   onSubmit() {
-    console.log('submit');
     this.router.navigate([DashboardRoute.path]);
   }
 }

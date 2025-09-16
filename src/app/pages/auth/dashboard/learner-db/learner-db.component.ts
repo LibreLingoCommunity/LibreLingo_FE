@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-learner-db',
   imports: [],
   templateUrl: './learner-db.component.html',
-  styleUrl: './learner-db.component.scss'
+  styleUrl: './learner-db.component.scss',
 })
-export class LearnerDbComponent {
-
-}
+export class LearnerDashboardComponent {}
