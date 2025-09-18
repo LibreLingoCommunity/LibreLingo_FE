@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
-import { HeaderRoutes } from '@app/app.routes';
+import { AuthHeaderComponent } from './authHeader/authHeader.component';
+import { GuestHeaderComponent } from './guestHeader/guestHeader.component';
 import { LogoComponent } from './logo/logo.component';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink, LogoComponent],
+  imports: [LogoComponent, AuthHeaderComponent, GuestHeaderComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  HeaderRoutes = HeaderRoutes;
+  isAuthenticated = true;
 }

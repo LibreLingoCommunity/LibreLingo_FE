@@ -1,14 +1,14 @@
 <header class="header my-4">
-  <nav class="nav flex flex-row mx-auto justify-between">
-    <div class="flex flex-row space-x-6 items-center nav-links mx-2">
-      <app-logo />
-      <ul class="flex flex-row">
-        @for (item of HeaderRoutes; track item.path) {
-        <li class="mx-2">
-          <a [routerLink]="item.path">{{ item.title }}</a>
-        </li>
-        }
-      </ul>
+  <nav
+    class="nav flex flex-row mx-auto place-content-between items-center justify-between"
+  >
+    <app-logo />
+    <div class="flex flex-row space-x-6 nav-links mx-2">
+      @if (isAuthenticated) {
+      <app-auth-header></app-auth-header>
+      } @else {
+      <app-guest-header></app-guest-header>
+      }
     </div>
   </nav>
 </header>

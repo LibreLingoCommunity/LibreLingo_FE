@@ -1,20 +1,22 @@
 import { Component } from '@angular/core';
 import { Course } from '@app/core/services/models/course';
-import { CourseComponent } from './components/course/course/course.component';
+import { CoursePreviewComponent } from './components/coursePreview/coursePreview.component';
 
 @Component({
   selector: 'app-learner-db',
-  imports: [CourseComponent],
+  imports: [CoursePreviewComponent],
   templateUrl: './learner-db.component.html',
   styleUrl: './learner-db.component.scss',
 })
 export class LearnerDashboardComponent {
   startedCourses: Course[] = [
     {
+      id: '1',
       name: 'Course started 1',
       description: 'Course started 1 description',
     },
     {
+      id: '2',
       name: 'Course started 2',
       description: 'Course started 2 description',
     },
@@ -22,6 +24,7 @@ export class LearnerDashboardComponent {
 
   availableCoursesToUnlock: Course[] = [
     {
+      id: '3',
       name: 'Course available 1',
       description: 'Course available 1 description',
     },
@@ -29,6 +32,7 @@ export class LearnerDashboardComponent {
 
   completedCourses: Course[] = [
     {
+      id: '4',
       name: 'Course completed 1',
       description: 'Course completed 1 description',
     },

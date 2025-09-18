@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
-import { DashboardRoute, SignupRoute } from '@app/app.routes';
+import { DashboardRoute, SignupRoute } from '@app/routes/basicRoutes';
 
 @Component({
   selector: 'app-login',

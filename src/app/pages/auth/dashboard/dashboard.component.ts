@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { LearnerDashboardRoute, LinguistDashboardRoute } from '@app/app.routes';
+import {
+  LearnerDashboardRoute,
+  LinguistDashboardRoute,
+} from '@app/routes/basicRoutes';
 
 @Component({
   selector: 'app-dashboard',

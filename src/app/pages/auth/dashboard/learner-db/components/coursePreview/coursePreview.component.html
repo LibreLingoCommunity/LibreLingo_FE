@@ -1,0 +1,12 @@
+<div class="border border-gray-700 p-4">
+  <h2>{{ course.name }}</h2>
+  <p>{{ course.description }}</p>
+  <div class="flex justify-center">
+    <button
+      class="bg-blue-500 px-4 py-2 text-white rounded mt-4 align-center"
+      [routerLink]="'/' + LearnerDashboardRoute.path + '/' + course.id"
+    >
+      See more
+    </button>
+  </div>
+</div>

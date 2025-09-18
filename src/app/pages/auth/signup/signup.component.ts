@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
-import { DashboardRoute, LoginRoute } from '@app/app.routes';
+import { DashboardRoute, LoginRoute } from '@app/routes/basicRoutes';
 
 @Component({
   selector: 'app-signup',

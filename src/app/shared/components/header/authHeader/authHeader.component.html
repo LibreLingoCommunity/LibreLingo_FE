@@ -1,17 +1,12 @@
-<header class="header my-4">
-  <nav class="nav flex flex-row mx-auto justify-between">
-    <app-logo />
-    <ul class="flex flex-row">
-      @for (item of AuthHeaderRoutes; track item.path) {
-      <li class="mx-2">
-        <a [routerLink]="item.path">{{ item.title }}</a>
-      </li>
-      }
-    </ul>
-    <div class="flex flex-row space-x-6 items-center nav-links mx-2">
-      <div class="accountImg max-w-12">
-        <img [src]="accountImgPath" alt="Account icon" />
-      </div>
-    </div>
-  </nav>
-</header>
+<div class="flex flex-row space-x-6 items-center nav-links mx-2">
+  <ul class="flex flex-row">
+    @for (item of AuthHeaderRoutes; track item.path) {
+    <li class="mx-2">
+      <a [routerLink]="item.path">{{ item.title }}</a>
+    </li>
+    }
+  </ul>
+  <div class="accountImg max-w-12">
+    <img [src]="accountImgPath" alt="Account icon" />
+  </div>
+</div>

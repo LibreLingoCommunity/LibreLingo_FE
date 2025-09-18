@@ -1,9 +1,5 @@
 <div class="flex flex-col h-full w-full items-center">
-  @if (isAuthenticated) {
-  <app-auth-header />
-  } @else {
-  <app-header />
-  }
+  <app-header></app-header>
   <main class="main container content flex-grow">
     <div class="px-24">
       <router-outlet />
