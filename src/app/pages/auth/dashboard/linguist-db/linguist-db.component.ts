@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { CoursePreviewComponent } from '@app/pages/auth/dashboard/learner-db/components/coursePreview/coursePreview.component';
 import { CreateNewCourseRoute } from '@app/routes/basicRoutes';
-import { ButtonComponent } from '@app/shared/components/ui/button/button.component';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-linguist-db',
-  imports: [ButtonComponent, CoursePreviewComponent],
+  imports: [ButtonModule, CoursePreviewComponent],
   templateUrl: './linguist-db.component.html',
   styleUrl: './linguist-db.component.scss',
 })
