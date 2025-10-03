@@ -1,14 +1,6 @@
 <h1>Dashboard</h1>
 <!-- Bar for switching in linguist mode-->
 <div class="flex justify-center m-4 space-x-4">
-  <button
-    class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full shadow"
-  >
-    <a (click)="goToLinguistDashboard()">Linguist</a>
-  </button>
-  <button
-    class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full shadow"
-  >
-    <a (click)="goToLearnerDashboard()">Learner</a>
-  </button>
+  <p-button (click)="goToLinguistDashboard()" label="Linguist"></p-button>
+  <p-button (click)="goToLearnerDashboard()" label="Learner"></p-button>
 </div>

@@ -10,7 +10,7 @@ import { HeaderComponent } from './shared/components/header/header.component';
   imports: [RouterOutlet, HeaderComponent, FooterComponent],
 })
 export class AppComponent {
-  title = 'LibreLingoCommunity_FE';
+  title = 'LibreLingo Community';
 
   ngOnInit() {}
 }

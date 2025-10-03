@@ -4,10 +4,11 @@ import {
   LearnerDashboardRoute,
   LinguistDashboardRoute,
 } from '@app/routes/basicRoutes';
+import { Button } from 'primeng/button';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [],
+  imports: [Button],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss',
 })
