@@ -1,6 +1,7 @@
 import { AuthComponent } from '@app/pages/auth/auth.component';
 import { DashboardComponent } from '@app/pages/auth/dashboard/dashboard.component';
 import { LearnerDashboardComponent } from '@app/pages/auth/dashboard/learner-db/learner-db.component';
+import { CreateNewCourseComponent } from '@app/pages/auth/dashboard/linguist-db/create-new-course/create-new-course.component';
 import { LinguistDashboardComponent } from '@app/pages/auth/dashboard/linguist-db/linguist-db.component';
 import { LoginComponent } from '@app/pages/auth/login/login.component';
 import { SignupComponent } from '@app/pages/auth/signup/signup.component';
@@ -41,6 +42,12 @@ export const LinguistDashboardRoute = {
   component: LinguistDashboardComponent,
 };
 
+export const CreateNewCourseRoute = {
+  path: 'create-new-course',
+  title: 'Create new course',
+  component: CreateNewCourseComponent,
+};
+
 export const basicRoutes = [
   AuthRoute,
   LoginRoute,
@@ -48,4 +55,5 @@ export const basicRoutes = [
   DashboardRoute,
   LearnerDashboardRoute,
   LinguistDashboardRoute,
+  CreateNewCourseRoute,
 ];
