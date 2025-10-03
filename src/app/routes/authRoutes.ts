@@ -1,9 +1,17 @@
-import { CourseComponent } from '@app/pages/auth/dashboard/learner-db/components/course/course.component';
-import { LearnerDashboardRoute } from '@app/routes/basicRoutes';
+import {
+  LearnerDashboardRoute,
+  LinguistDashboardRoute,
+} from '@app/routes/basicRoutes';
+import { CourseComponent } from '@app/shared/components/course/course.component';
 
-export const CourseRoute = {
+export const LearnerCourseRoute = {
   path: LearnerDashboardRoute.path + '/:id_course',
   title: 'Course',
   component: CourseComponent,
 };
-export const authRoutes = [CourseRoute];
+export const LinguistCourseRoute = {
+  path: LinguistDashboardRoute.path + '/:id_course',
+  title: 'Course',
+  component: CourseComponent,
+};
+export const authRoutes = [LearnerCourseRoute, LinguistCourseRoute];

@@ -22,7 +22,7 @@ import { ToggleButtonModule } from 'primeng/togglebutton';
   styleUrl: './create-new-course.component.css',
 })
 export class CreateNewCourseComponent {
-  activeIndex = 0;
+  activeIndex = 1;
 
   name = '';
   email = '';

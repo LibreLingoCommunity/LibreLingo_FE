@@ -3,9 +3,7 @@ import Aura from '@primeuix/themes/aura';
 
 const primaryColor = 'blue';
 const lightColorText = 'slate';
-const lightColorBg = 'slategray';
 const darkColorText = 'zinc';
-const darkColorBg = 'zinc';
 const LibreLingoPreset = definePreset(Aura, {
   semantic: {
     primary: {
@@ -40,7 +38,7 @@ const LibreLingoPreset = definePreset(Aura, {
       },
       dark: {
         surface: {
-          0: '#000000',
+          0: '#ffffff',
           50: '{' + darkColorText + '}.50}',
           100: '{' + darkColorText + '.100}',
           200: '{' + darkColorText + '.200}',
