@@ -1,0 +1,27 @@
+<button
+  [attr.type]="type"
+  class="btn"
+  [class.btn--primary]="variant === 'primary'"
+  [class.btn--secondary]="variant === 'secondary'"
+  [class.btn--ghost]="variant === 'ghost'"
+  [class.btn--sm]="size === 'sm'"
+  [class.btn--md]="size === 'md'"
+  [class.btn--lg]="size === 'lg'"
+  [attr.aria-disabled]="disabled"
+  [disabled]="disabled"
+  (click)="onClick($event)"
+>
+  <span
+    class="btn__icon btn__icon--leading"
+    *ngIf="leadingIcon"
+    aria-hidden="true"
+    >{{ leadingIcon }}</span
+  >
+  <span class="btn__label">{{ label }}</span>
+  <span
+    class="btn__icon btn__icon--trailing"
+    *ngIf="trailingIcon"
+    aria-hidden="true"
+    >{{ trailingIcon }}</span
+  >
+</button>
