@@ -1,1 +1,36 @@
-<h1>Linguist Dashboard</h1>
+<h1 class="text-center text-3xl">Linguist Dashboard</h1>
+<div class="my-4">
+  <h1 class="text-xl">All available courses</h1>
+
+  <div class="flex flex-row justify-between my-4">
+    @for (course of allCourses; track $index) {
+    <app-course [course]="course"></app-course>
+    } @empty {
+    <p>No courses available</p>
+    }
+  </div>
+</div>
+<hr />
+
+<div class="my-4">
+  <h1 class="text-xl">Available courses to edit</h1>
+
+  <div class="flex flex-row justify-between my-4">
+    @for (course of availableCoursesToUnlock; track $index) {
+    <app-course [course]="course"></app-course>
+    } @empty {
+    <p>No courses available to edit</p>
+    }
+  </div>
+</div>
+<hr />
+
+<div class="my-4">
+  <h1 class="text-xl">Create a new course</h1>
+  <app-button
+    label="Create"
+    variant="secondary"
+    size="lg"
+    (pressed)="onCreateNewCourse()"
+  ></app-button>
+</div>
