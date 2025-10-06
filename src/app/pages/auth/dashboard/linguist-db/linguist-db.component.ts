@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { Course } from '@app/core/services/models/course';
+import { Course } from '@app/core/models/course';
 import { CreateNewCourseRoute } from '@app/routes/basicRoutes';
 import { CoursePreviewComponent } from '@app/shared/components/course-preview/course-preview.component';
 import { ButtonModule } from 'primeng/button';

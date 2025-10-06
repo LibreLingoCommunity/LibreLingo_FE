@@ -1,12 +1,12 @@
 <button
   class="dm-toggle"
-  [attr.aria-pressed]="isDark"
+  [attr.aria-pressed]="mode() === 'dark'"
   (click)="onToggleClick()"
   title="Toggle dark mode"
 >
   <span class="visually-hidden">Toggle dark mode</span>
   <!-- moon (dark) / sun (light) -->
-  @if(isDark) {
+  @if(this.mode() === 'dark') {
   <svg
     width="20"
     height="20"

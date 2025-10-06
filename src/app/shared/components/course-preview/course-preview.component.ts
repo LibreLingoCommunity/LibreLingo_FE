@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
-import { Course } from '@app/core/services/models/course';
+import { Course } from '@app/core/models/course';
 import { LearnerDashboardRoute } from '@app/routes/basicRoutes';
 import { Button } from 'primeng/button';
 

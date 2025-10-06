@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Course } from '@app/core/services/models/course';
+import { Course } from '@app/core/models/course';
 import { CoursePreviewComponent } from '../../../../shared/components/course-preview/course-preview.component';
 
 @Component({
