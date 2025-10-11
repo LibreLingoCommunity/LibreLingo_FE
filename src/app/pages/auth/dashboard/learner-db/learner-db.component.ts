@@ -15,11 +15,15 @@ export class LearnerDashboardComponent {
       id: '1',
       name: 'Course started 1',
       description: 'Course started 1 description',
+      modules: [],
+      loading: false,
     },
     {
       id: '2',
       name: 'Course started 2',
       description: 'Course started 2 description',
+      modules: [],
+      loading: false,
     },
   ];
 
@@ -28,6 +32,8 @@ export class LearnerDashboardComponent {
       id: '3',
       name: 'Course available 1',
       description: 'Course available 1 description',
+      modules: [],
+      loading: false,
     },
   ];
 
@@ -36,6 +42,8 @@ export class LearnerDashboardComponent {
       id: '4',
       name: 'Course completed 1',
       description: 'Course completed 1 description',
+      modules: [],
+      loading: false,
     },
   ];
 }

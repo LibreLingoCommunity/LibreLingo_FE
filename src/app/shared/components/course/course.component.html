@@ -1,4 +1,12 @@
-<p>Course: {{ course_name() || "Course name placeholder" }}</p>
-<div class="description">
-  {{ course_description() || "Course description placeholder" }}
+@if (courseData) {
+<div>
+  <p>Course: {{ course_name() || "Course name placeholder" }}</p>
+  <div class="description">
+    {{ course_description() || "Course description placeholder" }}
+  </div>
 </div>
+} @else {
+<ng-template #loading>
+  <p>Caricamento in corso...</p>
+</ng-template>
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "to run": {
+      "examples": ["I run every day", "She runs fast"],
+      "translations": ["correre"],
+      "audio": "correre.mp3"
+    },
+    "apple": {
+      "examples": ["I eat an apple", "She buys an apple at the supermarket."],
+      "translations": ["mela"],
+      "articles": ["la", "una"],
+      "audio": ["mela.mp3"]
+    },
+    "I go to school": {
+      "translations": ["io vado a scuola"],
+      "audio": ["io_vado_a_scuola.mp3"]
+    }
+  }
+]

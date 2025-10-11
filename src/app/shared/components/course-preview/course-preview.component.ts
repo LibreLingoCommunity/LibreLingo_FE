@@ -15,7 +15,7 @@ export class CoursePreviewComponent {
   @Input() course!: Course;
   LearnerDashboardRoute = LearnerDashboardRoute;
 
-  constructor(private router: Router, private courseStore: CourseService) {}
+  constructor(private router: Router, private courseService: CourseService) {}
 
   onSeeMore(id: string) {
     // It should open the course in a modal
@@ -23,7 +23,7 @@ export class CoursePreviewComponent {
   }
 
   onOpenCourse(id: string) {
-    this.courseStore.setCourse(this.course);
+    this.courseService.setCourse(this.course);
     this.router.navigate([this.LearnerDashboardRoute.path, id]);
   }
 }
