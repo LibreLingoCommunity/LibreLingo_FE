@@ -4,7 +4,7 @@
 
   <div class="flex flex-row justify-between my-4">
     @for (course of startedCourses; track $index) {
-    <app-course [course]="course"></app-course>
+    <app-course-preview [course]="course"></app-course-preview>
     } @empty {
     <p>No courses started</p>
     }
@@ -17,7 +17,7 @@
 
   <div class="flex flex-row justify-between my-4">
     @for (course of availableCoursesToUnlock; track $index) {
-    <app-course [course]="course"></app-course>
+    <app-course-preview [course]="course"></app-course-preview>
     } @empty {
     <p>No courses available</p>
     }
@@ -30,7 +30,7 @@
 
   <div class="flex flex-row justify-between my-4">
     @for (course of completedCourses; track $index) {
-    <app-course [course]="course"></app-course>
+    <app-course-preview [course]="course"></app-course-preview>
     } @empty {
     <p>No courses completed</p>
     }

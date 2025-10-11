@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { CourseService } from '@app/core/services/course';
 
 @Component({
   selector: 'app-course',
@@ -7,6 +8,9 @@ import { Component, Input } from '@angular/core';
   styleUrl: './course.component.css',
 })
 export class CourseComponent {
-  @Input()
-  course_name: string | null = null;
+  private readonly courseService = inject(CourseService);
+
+  // course_name should be linked with the courseStore
+  course_name = this.courseService.course_name;
+  course_description = this.courseService.course_description;
 }

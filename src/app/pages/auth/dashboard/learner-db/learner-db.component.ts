@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { Course } from '@app/core/models/course';
+import { CourseComponent } from '@app/shared/components/course/course.component';
 import { CoursePreviewComponent } from '../../../../shared/components/course-preview/course-preview.component';
 
 @Component({
   selector: 'app-learner-db',
-  imports: [CoursePreviewComponent],
+  imports: [CoursePreviewComponent, CourseComponent],
   templateUrl: './learner-db.component.html',
   styleUrl: './learner-db.component.scss',
 })

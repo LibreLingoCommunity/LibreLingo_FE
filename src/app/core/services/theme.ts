@@ -12,6 +12,12 @@ export class ThemeService {
   // Actions
   toggleTheme() {
     this.themeStore.toggleTheme();
-    document.documentElement.classList.toggle('dark', this.mode() === 'dark');
+
+    // Add/remove class on document.documentElement
+    const el = document.querySelector('html');
+    if (el) {
+      if (this.mode() === 'dark') el.classList.add('darklingo');
+      else el.classList.remove('darklingo');
+    }
   }
 }

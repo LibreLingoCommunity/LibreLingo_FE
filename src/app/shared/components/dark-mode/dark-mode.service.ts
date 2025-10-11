@@ -3,6 +3,7 @@ import { BehaviorSubject } from 'rxjs';
 
 const THEME_KEY = 'app-theme-dark';
 
+@(deprecated!)
 @Injectable({ providedIn: 'root' })
 export class DarkModeService {
   private _isDark = new BehaviorSubject<boolean>(false);

@@ -4,7 +4,7 @@
 
   <div class="flex flex-row justify-between my-4">
     @for (course of allCourses; track $index) {
-    <app-course [course]="course"></app-course>
+    <app-course-preview [course]="course"></app-course-preview>
     } @empty {
     <p>No courses available</p>
     }
@@ -17,7 +17,7 @@
 
   <div class="flex flex-row justify-between my-4">
     @for (course of availableCoursesToEdit; track $index) {
-    <app-course [course]="course"></app-course>
+    <app-course-preview [course]="course"></app-course-preview>
     } @empty {
     <p>No courses available to edit</p>
     }

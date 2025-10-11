@@ -1,1 +1,4 @@
-<p>course {{ course_name ?? "Course name placeholder" }}</p>
+<p>Course: {{ course_name() || "Course name placeholder" }}</p>
+<div class="description">
+  {{ course_description() || "Course description placeholder" }}
+</div>
